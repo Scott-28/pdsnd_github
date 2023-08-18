@@ -32,9 +32,6 @@ def get_filters():
         (str) dow - name of the day of week to filter by, or "all" to apply no day filter
     """
     
-    day_of_week = "na"
-    month = "na"
-    
     # user input to select the city
     city = input("Would you like to see data for Chicago, New York, or Washington? --> ")
     city = city.lower()
