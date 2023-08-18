@@ -58,6 +58,7 @@ def get_filters():
         err_msg = "The filter criteria you entered did not match one of the options (month, day, none), please restart the program and try again"
         err_handler(err_msg)
     
+    # Lists of available options user can input for months or days
     avail_months = ['january', 'jan', '1', 'february', 'feb', '2', 'march', 'mar', '3', 'april', 'apr', '4', 'may', '5', 'june', 'jun', '6']
     avail_days = ['mon', 'monday', 'mo', 'tue', 'tuesday', 'tu', 'tues', 'wednesday', 'wed', 'we', 'thu', 'thur', 'thursday', 'th', 'friday', 'fri', 'fr', 'sat', 'saturday', 'sa', 'sun', 'sunday', 'su']
     
