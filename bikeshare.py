@@ -32,12 +32,11 @@ def get_filters():
         (str) dow - name of the day of week to filter by, or "all" to apply no day filter
     """
     
-    day_of_week = "na"
     month = "na"
+    day_of_week = "na"
     
     # user input to select the city
-    city = input("Would you like to see data for Chicago, New York, or Washington? --> ")
-    city = city.lower()
+    city = input("Would you like to see data for Chicago, New York, or Washington? --> ").lower()
     
     avail_cities = ['chicago', 'new york', 'washington', 'nyc', 'new york city']
 
@@ -47,11 +46,9 @@ def get_filters():
         err_handler(err_msg)
     
     # user input for if and how to sort the data
-    sort_filter = input("Would you like to filter the data by month, day, or not at all? (Type 'none' for not at all) --> ")
+    sort_filter = input("Would you like to filter the data by month, day, or not at all? (Type 'none' for not at all) --> ").lower()
     
     avail_filters = ['month', 'mon', 'day', 'none', 'not at all']
-    
-    sort_filter = sort_filter.lower()
     
     # Check to see if sort input is one of the available options
     if avail_filters.count(sort_filter) == 0:
